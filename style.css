@@ -1,0 +1,206 @@
+/* Réinitialisation de certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --linkcolor: hsl(184, 43%, 45%);
+    --linkcolorhover: hsl(184, 100%, 47%); 
+}
+
+
+/* Polices de base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: rgb(86, 86, 86);
+    line-height: 1.6;
+    text-align: center; 
+}
+
+.documents {
+    top: 10;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+}
+
+.documents div {
+    padding: 20px;
+}
+
+.documents p {
+    padding-bottom: 10px;
+}
+
+.documents h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.documents h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.documents a {
+    color: var(--linkcolor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.documents a:hover {
+    color: var(--linkcolorhover);
+}
+
+.documents a.docclass {
+    color: yellow;
+}
+
+.documents a.docclass:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header et bannière fixe */
+header {
+    background-color: #d3d3d3;  /* Gris clair pour la bannière */
+    color: #333;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;  /* Gris plus foncé pour le titre */
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgb(87, 87, 87);  /* Gris plus clair pour le sous-titre */
+}
+
+header a {
+    color: rgb(95, 132, 129);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: rgb(89, 157, 151); /* Gris bleuté plus doux */
+    text-decoration: underline;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: rgb(84, 113, 113);
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(109, 158, 158);
+}
+
+/* Section principale */
+main {
+    background-color: rgb(245, 245, 245);
+    padding: 40px 0;
+    margin-top: 120px;  /* Ajouter un espacement pour compenser la bannière fixe */
+}
+
+/* Section d'introduction */
+.intro {
+    padding: 40px 0;
+    background-color: #f9f9f9;  /* Fond doux pour la section intro */
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #555;  /* Gris doux pour le texte */
+}
+
+.btn {
+    background-color: #b0bec5;  /* Gris clair pour les boutons */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #90a4ae;  /* Gris plus foncé au survol */
+}
+
+
+/* Footer */
+footer {
+    background-color: #d3d3d3;  /* Gris clair pour le pied de page */
+    color: #333;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
